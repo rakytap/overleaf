@@ -1,3 +1,6 @@
 # equivalent to -gt option. Used to prevent latexmk from skipping recompilation
 # of output.log and output.pdf
 $go_mode = 3;
+
+# Enable shell escape for pdflatex (required for svg package)
+$pdflatex = 'pdflatex -shell-escape %O %S';
