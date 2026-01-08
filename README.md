@@ -63,13 +63,13 @@ This will create an admin user and output a URL that the user can visit to set t
 To create a regular user, you need to use the Node.js script directly:
 
 ```bash
-docker exec sharelatex node /overleaf/services/web/modules/server-ce-scripts/scripts/create-user.mjs --email=user@example.com
+docker exec sharelatex bash -c "cd /overleaf/services/web && /sbin/setuser www-data node modules/server-ce-scripts/scripts/create-user.mjs --email=user@example.com"
 ```
 
 To create a regular user with admin privileges, add the `--admin` flag:
 
 ```bash
-docker exec sharelatex node /overleaf/services/web/modules/server-ce-scripts/scripts/create-user.mjs --admin --email=user@example.com
+docker exec sharelatex bash -c "cd /overleaf/services/web && /sbin/setuser www-data node modules/server-ce-scripts/scripts/create-user.mjs --admin --email=user@example.com
 ```
 
 Both commands will output a URL that the user can visit to set their password and log in.

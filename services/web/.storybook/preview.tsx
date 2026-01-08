@@ -18,7 +18,7 @@ function resetMeta() {
     compileTimeout: 20,
   })
   window.metaAttributesCache.set('ol-ExposedSettings', {
-    adminEmail: 'placeholder@example.com',
+    adminEmail: 'peter.rakyta@ttk.elte.hu',
     appName: 'Overleaf',
     cookieDomain: '.overleaf.stories',
     dropboxAppName: 'Overleaf-Stories',

@@ -209,7 +209,7 @@ const settings = {
 
   // The email address which users will be directed to as the main point of
   // contact for this installation of Overleaf Community Edition.
-  adminEmail: process.env.OVERLEAF_ADMIN_EMAIL || 'placeholder@example.com',
+  adminEmail: process.env.OVERLEAF_ADMIN_EMAIL || 'peter.rakyta@ttk.elte.hu',
 
   // If provided, a sessionSecret is used to sign cookies so that they cannot be
   // spoofed. This is recommended.

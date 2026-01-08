@@ -773,7 +773,7 @@ module.exports = {
 
   appName: process.env.APP_NAME || 'Overleaf (Community Edition)',
 
-  adminEmail: process.env.ADMIN_EMAIL || 'placeholder@example.com',
+  adminEmail: process.env.ADMIN_EMAIL || 'peter.rakyta@ttk.elte.hu',
   adminDomains: process.env.ADMIN_DOMAINS
     ? JSON.parse(process.env.ADMIN_DOMAINS)
     : undefined,
